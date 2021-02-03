@@ -124,7 +124,8 @@ body {
 .cinema-hall__screen:after {
     content: '';
     display: block;
-    width: 300px;
+    max-width: 300px;
+    width: 100%;
     height: 6px;
     margin: 0 auto;
     background-color: var(--screen-color);
@@ -164,7 +165,9 @@ body {
 }
 
 .cinema-hall__seat {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 35px;
     height: 48px;
     border-radius: 5px;
