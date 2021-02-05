@@ -38,6 +38,10 @@ body {
     background-color:var(--body-bg-color);
 }
 
+address {
+    font-style: normal;
+}
+
 /* Page styles 
 ------------------------------------ */
 .main {
@@ -152,6 +156,10 @@ body {
     clip: rect(0 0 0 0);
 }
 
+.cinema-hall__check:hover + .cinema-hall__seat {
+    border: 3px solid var(--btn-bg-color);
+}
+
 .cinema-hall__check:focus + .cinema-hall__seat {
     outline: 3px double #000;
 }
@@ -162,6 +170,7 @@ body {
 
 .cinema-hall__check:disabled ~ .cinema-hall__seat {
     background-color: var(--seat-disabled-color);
+    border: 1px solid #000;
 }
 
 .cinema-hall__seat {
